@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.patryk.portfelik.MainActivity">
+
+
+    <TextView
+        android:text="choose category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView11"
+        android:gravity="center"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_above="@+id/confirmSport"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp" />
+
+    <ImageView
+        android:layout_width="521dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/bill"
+        android:clickable="true"
+        android:id="@+id/billBtEx"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="521dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/love"
+        android:clickable="true"
+        android:id="@+id/loveBt"
+        android:layout_below="@+id/billBtEx"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:layout_width="521dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/other"
+        android:clickable="true"
+        android:id="@+id/buttonExpTreats"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <ImageView
+        android:layout_width="521dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/sport"
+        android:clickable="true"
+        android:id="@+id/confirmSport"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/billBtEx"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="521dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/food"
+        android:clickable="true"
+        android:id="@+id/newExpenseBt"
+        android:layout_below="@+id/loveBt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="In this activity you can add new expense"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_above="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/arrow"
+        android:id="@+id/back"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

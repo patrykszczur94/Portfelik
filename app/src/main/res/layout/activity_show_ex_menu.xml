@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="90dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    tools:context="com.example.patryk.portfelik.showExMenu">
+
+    <ImageView
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/love"
+        android:clickable="true"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_width="521dp"
+        android:id="@+id/showLove"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/food"
+        android:id="@+id/showFood"
+        android:clickable="true"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginBottom="98dp"
+        android:layout_above="@+id/showLove"
+        android:layout_alignEnd="@+id/showTreats" />
+
+    <ImageView
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/sport"
+        android:id="@+id/ExForSport"
+        android:clickable="true"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/showLove"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="198dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/bill"
+        android:id="@+id/showBills"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/showTreats"
+        android:layout_alignStart="@+id/showTreats" />
+
+    <ImageView
+        app:srcCompat="@drawable/other"
+        android:id="@+id/showTreats"
+        android:clickable="true"
+        android:layout_row="4"
+        android:layout_column="4"
+        android:layout_width="198dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/showFood"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="In this activity you can view your expenses sorted by categories "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView13"
+        android:textAllCaps="false"
+        android:singleLine="false"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="choose category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:id="@+id/textView11"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/showBills"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/arrow"
+        android:id="@+id/back1"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
